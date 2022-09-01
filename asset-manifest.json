@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gh-pages-sneakershop/static/css/main.a7b5bdd6.css",
+    "main.js": "/gh-pages-sneakershop/static/js/main.3a14eb6d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/gh-pages-sneakershop/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/gh-pages-sneakershop/index.html",
+    "main.a7b5bdd6.css.map": "/gh-pages-sneakershop/static/css/main.a7b5bdd6.css.map",
+    "main.3a14eb6d.js.map": "/gh-pages-sneakershop/static/js/main.3a14eb6d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/gh-pages-sneakershop/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7b5bdd6.css",
+    "static/js/main.3a14eb6d.js"
+  ]
+}
