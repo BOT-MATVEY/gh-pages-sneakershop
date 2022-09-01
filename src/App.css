@@ -1,0 +1,441 @@
+
+* {
+  font-family: Inter;
+}
+
+input {
+  font-size: 16px;
+}
+
+html {
+  background: #f4f4f4;
+}
+
+.logo {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.PlaceHolder {
+background: white;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+border-radius: 20px;
+margin: 50px auto;
+border-radius: 10px;
+max-width: 1080px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header li {
+  margin: 0;
+}
+
+header ul li img {
+  margin-right: 20px; 
+}
+
+.HeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderLeftInfo:visited { 
+  color: inherit;
+}
+
+.HeaderLeftInfo h2, p {
+  margin: 0;
+}
+
+.HeaderLeft img {
+  margin-right: 15px;
+}
+
+
+
+.cartAndPrice {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cartAndPrice li {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding: 40px;
+  overflow: hidden;
+}
+
+.ProductTable {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items:center;
+  
+}
+
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 0 1 17%;
+  background-color: #fff;
+  min-width: 210px;
+  height: 260px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #F3F3F3;
+  transition: ease-in-out 0.13s;
+
+}
+
+.ProductCard:hover {
+box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.06);
+transform: translateY(-5px);
+}
+
+.SneakersImage {
+  display:block;
+  margin: 20px auto 15px auto;
+}
+
+.ProductCard h3 {
+  flex: 1;
+  margin: auto;
+  font-size: 13px;
+  font-weight:400;
+  padding: 5px 30px 0px;
+}
+
+.PriceAndAddButton {
+  display: flex;
+  left: 0px;
+  position: relative;
+  bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0px;
+}
+
+.PriceAndAddButton img {
+  cursor: pointer;
+}
+
+.PriceText {
+  margin: 0 0 2px;
+  font-size: 11px;
+  font-weight:500;
+  color: #BDBDBD;
+}
+
+.PriceSum {
+  font-weight:700;
+}
+
+.leftCornered {
+  position: absolute;
+ padding: 20px;
+}
+
+.leftCornered img {
+  cursor: pointer;
+}
+
+.HeaderOfProducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SearchBlock {
+  border: 1px solid #F3F3F3;
+  border-radius: 10px;
+  padding: 10px 15px;
+  align-items: center; 
+  display: flex;
+}
+
+.SearchBlock input {
+  border: 0px solid;
+  outline: none;
+}
+
+.SearchBlock img {
+  margin-right: 10px;
+}
+
+.drawer {
+  position: absolute;
+}
+
+.drawerOverlay {
+
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: black;
+  animation: FadeIn 350ms;
+  animation-fill-mode: forwards;
+  
+} 
+
+.cartIsNotVisible {
+  opacity: 0;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }  
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 0.1;
+  }  
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+.drawerCart {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  transition: all 350ms 
+}
+
+
+
+.drawerCart.cartIsNotVisible {
+  transform: translateX(100%);
+
+}
+
+.drawer h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items {
+flex:1;
+position: relative;
+overflow: auto;
+margin-bottom: 50px;
+
+}
+
+.CartItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px ;
+  overflow: hidden;
+  padding:  20px;
+  margin-bottom: 20px;
+}
+
+CartItemNameAndPrice {
+  margin-right: 40px;
+}
+
+.CartItemNameAndPrice p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.CartItemNameAndPrice b {
+  font-size: 14px;
+}
+
+.CartItemImage {
+  height:70px;
+  width: 70px;
+  background-size:contain;
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.CartItemButton {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: opacity 0.1s ease-in-out;
+
+}
+
+.CartItemButton:hover {
+  opacity: 1;
+}
+
+.CartInfo {
+  position: relative;
+  vertical-align: bottom;
+}
+
+
+
+.PriceLine {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.PriceLine span {
+  margin-right: 10px;
+}
+
+.DashLine {
+  height: 10px;
+  flex: 1;
+  border-bottom: dashed rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.OrderButton {
+  position: relative;
+  width: 325px;
+  height: 55px;
+  color: white;
+  background: #9DD458;
+  border-radius: 20px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor:pointer;
+}
+.OrderButton img{
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.OrderButton:hover {
+}
+
+.OrderButton:hover img {
+  transform: translateX(15px);
+}
+
+.NavIcon {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.NavIcon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 0.2rem crimson)
+}
+
+.NothingHere {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  height: 300px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.NothingHere p {
+  margin-bottom: 20px;
+}
+
+.orderBorder {
+  position: relative;
+  font-weight:700;
+  box-sizing: border-box;
+ 
+}
+
+.orderBorder li {
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+
+  transition: all 150ms ease-in-out;
+}
+
+.orderBorder li:hover {
+  transform: scale(102.5%);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+  
+}
+
+.mainText {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.orderBorder .PriceText {
+  font-size: 15px;
+}
+
+
+.Body {
+
+  border-radius: 25px;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 40px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  z-index: 99;
+ overflow: hidden;
+}
+
+.Body h1 {
+  margin:0;
+}
+
